@@ -1,5 +1,3 @@
-![][image1]
-
 **Develop a Simple Laravel CRUD Application | December 3, 2024 | 11:47:51 PM**
 
 Objective
@@ -26,7 +24,7 @@ Step-by-Step Instructions
 
 **Setup the Laravel Project**  
 1\. Install a new Laravel project:  
-bash  
+
    laravel new book-management  
    cd book-management   
 
@@ -34,6 +32,7 @@ bash
 
 **Create the Database and Model**  
 1\. Create a migration and model for the Book entity:  
+
    php artisan make:model Book \-m  
    Php artisan migrate
 
@@ -45,13 +44,13 @@ bash
 Look for the migration file
 
     Schema::create('books', function (Blueprint $table) {  
-            $table-\>id();  
-            $table-\>string('title');  
-            $table-\>string('author');  
-            $table-\>text('description');  
-            $table-\>integer('published\_year');  
-            $table-\>string('genre');  
-            $table-\>timestamps();  
+            $table->id();  
+            $table->string('title');  
+            $table->string('author');  
+            $table->text('description');  
+            $table->integer('published\_year');  
+            $table->string('genre');  
+            $table->timestamps();  
         });
 
 3\. Run the migration:  
@@ -65,7 +64,7 @@ bash
 
 2\. Define the routes in routes/web.php:
 
-  <?php
+  \<?php
 
   use Illuminate\\Support\\Facades\\Route;  
   use App\\Http\\Controllers\\BookController;
