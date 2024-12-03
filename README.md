@@ -43,7 +43,7 @@ Step-by-Step Instructions
 **Open VS Code** 
 
 ```
-  code .
+  book-management>code .
 ```
 
 2\. Define the database schema in the migration file located in database/migrations/:  
