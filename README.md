@@ -36,13 +36,15 @@ Step-by-Step Instructions
 1\. Create a migration and model for the Book entity:  
    
    ```
-   php artisan make:model Book \-m  
+   php artisan make:model Book -m  
    php artisan migrate
    ```
 
 **Open VS Code** 
 
+```
   code .
+```
 
 2\. Define the database schema in the migration file located in database/migrations/:  
 Look for the migration file
