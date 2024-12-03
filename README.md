@@ -66,7 +66,7 @@ bash
 
 2\. Define the routes in routes/web.php:
 
-  \<?php
+  <?php
 
   use Illuminate\\Support\\Facades\\Route;  
   use App\\Http\\Controllers\\BookController;
