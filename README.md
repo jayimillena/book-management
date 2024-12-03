@@ -34,7 +34,6 @@ bash
 
 **Create the Database and Model**  
 1\. Create a migration and model for the Book entity:  
-bash  
    php artisan make:model Book \-m  
    Php artisan migrate
 
