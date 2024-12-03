@@ -34,9 +34,10 @@ Step-by-Step Instructions
 
 **Create the Database and Model**  
 1\. Create a migration and model for the Book entity:  
-    ```
+   
+   ```
    php artisan make:model Book \-m  
-   Php artisan migrate
+   php artisan migrate
    ```
 
 **Open VS Code** 
