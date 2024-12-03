@@ -25,8 +25,10 @@ Step-by-Step Instructions
 **Setup the Laravel Project**  
 1\. Install a new Laravel project:  
 
-   ```laravel new book-management  
-   cd book-management```   
+   ```
+   laravel new book-management  
+   cd book-management
+   ```   
 
 2\. Set up the database connection in the .env file.
 
