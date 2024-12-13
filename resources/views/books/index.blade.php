@@ -79,11 +79,12 @@
                         required></textarea>
                 </div>
                 <div class="mb-4">
-                    <label for="published_year" class="block text-gray-700 font-semibold mb-2">Published year</label>
-                    <input type="number" id="author" name="published_year"
-                        placeholder="Enter book's publish year"
-                        class="w-full border border-gray-300 rounded-md px-3 py-2 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition duration-200"
-                        required>
+                    <label for="published_year" class="block text-g ray-700 font-semibold mb-2">Published year</label>
+                    <select name="published_year" id="published_year" class="w-full border border-gray-300 rounded-md px-3 py-2 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition duration-200">
+                        @for($year = 1970; $year <= date('Y'); $year++)
+                            <option value="{{ $year }}">{{ $year }}</option>
+                        @endfor
+                    </select>
                 </div>
                 <div class="mb-4">
                     <label for="genre" class="block text-gray-700 font-semibold mb-2">Genre</label>

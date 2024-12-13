@@ -15,8 +15,7 @@ class BookController extends Controller
         $query = $request->input('query');
 
         $books = Book::when($query, function ($q) use ($query) {
-           return $q->where('title', 'like', "%$query%")
-                    ->orWhere('author', 'like', "%$query%");
+           return $q->where('title', 'like', "%$query%");
         })->get();
 
         return view('books.index', compact('books'));
@@ -38,8 +37,8 @@ class BookController extends Controller
        $validated = $request->validate([
            'title' => 'required|string|max:255',
            'author' => 'required|string|max:255',
-           'description' => 'required',
-           'published_year' => 'required|integer',
+           'description' => 'required|string',
+           'published_year' => 'required|string',
            'genre' => 'required|string|max:255',
        ]);
 
